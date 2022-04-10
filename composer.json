@@ -1,0 +1,30 @@
+{
+    "name": "shivishbrahma/phpizer",
+    "autoload": {
+        "psr-4": {
+            "PHPizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Purbayan Chowdhury",
+            "email": "pur.cho.99@gmail.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --verbose"
+    }
+}
